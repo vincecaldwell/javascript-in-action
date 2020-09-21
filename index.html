@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Javascript Practice for Me</h1>
+    <h2>The Basics</h2>
+
+    <p id="ready-text">Are you ready?</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <hr/>
+    <br/>
+
+    <h3>Simple Functions</h3>
+    <p>Hello, World</p>
+    <button onclick="helloWorld()">Alert Hello World!</button>
+
+    <br/>
+
+    <h3>Calculate Numbers</h3>
+
+    <label for="calc_first_numb">First Number:</label>
+    <input type="text" name="calc_first_numb" id="calc_first_numb"> <br>
+
+    <label for="calc_second_numb">Last Number:</label>
+    <input 
+        type="text" 
+        name="calc_second_numb" id="calc_second_numb"
+    > 
+        <br>
+
+    <input type="radio" id="add_operator" name="operator" value="add_operator">
+    <label for="add_operator">Addition</label><br>
+
+    <input type="radio" id="subtract_operator" name="operator" value="subtract_operator">
+    <label for="subtract_operator">Subtraction</label><br>
+
+    <input type="radio" id="multiply_operator" name="operator" value="multiply_operator">
+    <label for="multiply_operator">Multiply</label><br>
+
+    <input type="radio" id="divide_operator" name="operator" value="divide_operator">
+    <label for="divide_operator">Divide</label><br>
+
+
+    <p id="total_text">The total will be...</p>
+
+
+    <button onclick="calculate(calc_first_numb, calc_second_numb, operator)">Make Something Happen</button>
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
