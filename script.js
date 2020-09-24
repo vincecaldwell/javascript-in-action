@@ -5,19 +5,42 @@ function changeText() {
     document.getElementById("ready-text").style.fontSize = "50px";
 }
 
+//ALERT's "Hello World"
 function helloWorld() {
     alert("Hello World!");
 }
 
+//Calculator function
+function calculate(numbOne, numbTwo) {
+    let operatorSign = document.querySelector('[name="operator"]:checked').value;
+    //console.log(operatorSign);
+    let num1= Number(numbOne.value);
+    //console.log(num1);
+    let num2= Number(numbTwo.value);
+    //console.log(num2);
+    let total;
 
-// function calculate(numbOne, numbTwo, operator) {
-//     console.log(operator);
-//     if(operator == "add_operator"){
-//         let sum = Number(numbOne.value) + Number(numbTwo.value);
-//     document.getElementById("total_text").innerHTML = sum;
-//     }
+    switch (operatorSign) {
+        case "+":
+            total = num1+num2;
+            break;
+            case "-":
+            total = num1-num2;
+            break;
+            case "*":
+            total = num1*num2;
+            break;
+            case "/":
+            total = num1/num2;
+            break;
+        default:
+            break;
+    }
+
+
+    document.getElementById("total_text").innerHTML = "Total: " + total;
     
-// }
+}
 
 // _______________________________________
 //REDUCE function

@@ -26,7 +26,12 @@
     <h3>Calculate Numbers</h3>
 
     <label for="calc_first_numb">First Number:</label>
-    <input type="text" name="calc_first_numb" id="calc_first_numb"> <br>
+    <input 
+        type="text" 
+        name="calc_first_numb" 
+        id="calc_first_numb"
+    > 
+        <br>
 
     <label for="calc_second_numb">Last Number:</label>
     <input 
@@ -35,25 +40,27 @@
     > 
         <br>
 
-    <input type="radio" id="add_operator" name="operator" value="add_operator">
+    <input type="radio" id="add_operator" name="operator" value="+">
     <label for="add_operator">Addition</label><br>
 
-    <input type="radio" id="subtract_operator" name="operator" value="subtract_operator">
+    <input type="radio" id="subtract_operator" name="operator" value="-">
     <label for="subtract_operator">Subtraction</label><br>
 
-    <input type="radio" id="multiply_operator" name="operator" value="multiply_operator">
+    <input type="radio" id="multiply_operator" name="operator" value="*">
     <label for="multiply_operator">Multiply</label><br>
 
-    <input type="radio" id="divide_operator" name="operator" value="divide_operator">
+    <input type="radio" id="divide_operator" name="operator" value="/">
     <label for="divide_operator">Divide</label><br>
 
 
     <p id="total_text">The total will be...</p>
 
 
-    <button onclick="calculate(calc_first_numb, calc_second_numb, operator)">Make Something Happen</button>
+    <button onclick="calculate(calc_first_numb, calc_second_numb)">Make Something Happen</button>
     
 
+    <hr/>
+    <br/>
 
 
 
